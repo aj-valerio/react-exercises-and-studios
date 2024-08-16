@@ -1,15 +1,15 @@
 export default function BookList() {
-   let pageTitle = "shrug";
-   let book1 = "google.com";
-   let book2 = "";
-   let book3 = "";
+   let pageTitle = "A Few Good Books";
+   let book1 = "https://i.thriftbooks.com/api/imagehandler/m/E493B7A5112C0D038981A6B69091FDEDAAB0ECD5.jpeg";
+   let book2 = "https://charlesagvent.cdn.bibliopolis.com/pictures/005830.jpg?auto=webp&v=1573226981";
+   let book3 = "https://m-etropolis.com/onceuponatime/wp-content/uploads/sites/13/2011/04/TIGER.jpg";
 
    return (
       <div>
          <h3>{pageTitle}</h3>
-         <img src={book1} alt="Nothing here!" />
-         <img src={book2} alt="Nothing here!" />
-         <img src={book3} alt="Nothing here!" />
+         <img src={book1} alt="Cover art of Sarah Galvin's 'Ugly Time' depicting the inside of a bouncy castle" />
+         <img src={book2} alt="Cover art of 'The Road to Wellville' by T.C. Boyle showing a field of wheat" />
+         <img src={book3} alt="Cover art of Tea Obreht's 'The Tiger's Wife', a black background with the lower half of a tiger at the top" />
       </div>      
    );
 }
