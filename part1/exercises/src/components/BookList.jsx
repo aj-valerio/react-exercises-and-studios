@@ -1,3 +1,5 @@
+import classes from './BookList.module.css';
+
 export default function BookList() {
    let pageTitle = "A Few Good Books";
    let book1 = "https://i.thriftbooks.com/api/imagehandler/m/E493B7A5112C0D038981A6B69091FDEDAAB0ECD5.jpeg";
@@ -6,10 +8,10 @@ export default function BookList() {
 
    return (
       <div>
-         <h3>{pageTitle}</h3>
-         <img src={book1} alt="Cover art of Sarah Galvin's 'Ugly Time' depicting the inside of a bouncy castle" />
-         <img src={book2} alt="Cover art of 'The Road to Wellville' by T.C. Boyle showing a field of wheat" />
-         <img src={book3} alt="Cover art of Tea Obreht's 'The Tiger's Wife', a black background with the lower half of a tiger at the top" />
+         <h3 class={classes.booksHeading}>{pageTitle}</h3>
+            <img class={classes.bookImage} src={book1} alt="Cover art of Sarah Galvin's 'Ugly Time' depicting the inside of a bouncy castle" />
+            <img class={classes.bookImage} src={book2} alt="Cover art of 'The Road to Wellville' by T.C. Boyle showing a field of wheat" />
+            <img class={classes.bookImage} src={book3} alt="Cover art of Tea Obreht's 'The Tiger's Wife', a black background with the lower half of a tiger at the top" />
       </div>      
    );
 }

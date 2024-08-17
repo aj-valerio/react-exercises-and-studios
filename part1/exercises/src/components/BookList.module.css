@@ -1,0 +1,12 @@
+ .booksHeading {
+    color: black;
+    text-decoration: underline;
+    text-align: left;
+ }
+
+ .bookImage {
+    height: 120px;
+    width: auto;
+    position: relative;
+    align-items: center;
+ }
